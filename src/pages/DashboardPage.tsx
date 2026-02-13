@@ -1,3 +1,10 @@
+import { Header } from "../features/products/components/Header"
+
 export default function DashboardPage() {
-   return <div>DashboardPage</div>
+   return (
+    <>
+    <Header />
+   <div>DashboardPage</div>
+   </>
+)
 }
