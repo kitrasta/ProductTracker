@@ -1,13 +1,17 @@
-import { useState, FormEvent } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Здесь позже можно будет добавить реальную авторизацию
     console.log("Login attempt", { email, password });
+    navigate("/dashboard");
   };
 
   return (
