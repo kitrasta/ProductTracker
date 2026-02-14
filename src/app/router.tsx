@@ -11,9 +11,9 @@ import StatisticPage from "../pages/StatisticPage";
 
 export const router = createBrowserRouter(
     [
-        {path: '/', element: <LoginPage />},
-        {path: 'dashboard', element: <DashboardPage />},
-        {path: 'add', element: <AddProductPage />},
-        {path: 'statistic', element: <StatisticPage />}
+        { path: "/", element: <LoginPage /> },
+        { path: "/dashboard", element: <DashboardPage /> },
+        { path: "/add", element: <AddProductPage /> },
+        { path: "/statistic", element: <StatisticPage /> }
         ]
 );

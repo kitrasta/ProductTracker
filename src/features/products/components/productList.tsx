@@ -1,8 +1,11 @@
-export default function(){
-    return (
-        <div>
-            Лист компонент
-        </div>
-    )
-    
+import { ProductCategory } from "./productCategory";
+import { StatusCard } from "./statusCard";
+
+export function ProductList() {
+  return (
+    <div>
+      <StatusCard />
+      <ProductCategory />
+    </div>
+  );
 }
