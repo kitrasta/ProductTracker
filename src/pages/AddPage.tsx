@@ -1,7 +1,3 @@
 export const AddPage = () => {
-    return (
-        <div>
-            <h1>Add Page</h1>
-        </div>
-    )
+  return <h1>Add page</h1>
 }
