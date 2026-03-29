@@ -1,9 +1,12 @@
 import mockProducts from '../data/mockProducts'
-import { getProductStatus } from '../utils/productUtils'
+import ProductTable from '../components/products/ProductTable'
 
-
-function ProductPage() {
-    return <div>Мои продукты</div>
+function MyProductsPage() {
+  return (
+    <div>
+      <ProductTable products={mockProducts} />
+    </div>
+  )
 }
 
-export default ProductPage
+export default MyProductsPage

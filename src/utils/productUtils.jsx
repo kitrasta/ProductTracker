@@ -3,7 +3,7 @@ export function getProductStatus(expiryDate) {
     const expiry = new Date(expiryDate)
     const dayLeft = Math.ceil((expiry - today) / (1000 * 60 * 60 * 24))
 
-    if (daysLeft < 0) return 'expired'
-    if (daysLeft <= 3) return 'warning'
+    if (dayLeft < 0) return 'expired'
+    if (dayLeft <= 3) return 'warning'
     return 'ok'
 }
