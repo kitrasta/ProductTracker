@@ -1,0 +1,26 @@
+header {
+display: flex;
+justify-content: space-between;
+width: auto;
+height: 250px;
+background-color: var(--color-primary);
+color: var(--color-text-white);
+padding: 10px;
+
+}
+
+.nav-items {
+    display: flex;
+    gap: 16px;
+
+}
+.link {
+    color: var(--color-white);
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  
+  .active {
+    opacity: 1;
+    border-bottom: 2px solid var(--color-white);
+  }
