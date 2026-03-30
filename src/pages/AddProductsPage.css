@@ -1,0 +1,133 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+  }
+  
+  .form-card {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+  }
+  
+  .form-left {
+    flex: 1;
+  }
+  
+  .form-title {
+    color: var(--color-primary);
+    margin-bottom: 4px;
+  }
+  
+  .form-subtitle {
+    color: #888;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  
+  .field label {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-primary);
+  }
+  
+  .field input,
+  .field select {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .field-row {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .field-row .field {
+    flex: 1;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .quantity button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btn-secondary {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .form-right {
+    width: 300px;
+  }
+  
+  .upload-area {
+    border: 2px dashed #ddd;
+    border-radius: 12px;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .upload-icon {
+    font-size: 48px;
+  }
+  
+  .btn-upload {
+    background-color: var(--color-warning);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .upload-hint {
+    font-size: 12px;
+    color: #aaa;
+  }
