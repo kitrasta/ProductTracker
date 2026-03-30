@@ -1,0 +1,16 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+  }
+  
+  .stat-cards {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .page__title {
+    color: var(--color-primary);
+    margin-bottom: 16px;
+  }
