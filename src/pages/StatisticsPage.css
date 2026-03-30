@@ -1,0 +1,76 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+  }
+  
+  .stats-card {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: 32px;
+  }
+  
+  .stats-title {
+    color: var(--color-primary);
+    margin-bottom: 4px;
+  }
+  
+  .stats-subtitle {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  
+  .stat-cards {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .stat-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  .stat-card--warning {
+    background-color: #fdf0e0;
+    border: 1px solid var(--color-warning);
+  }
+  
+  .stat-card--expired {
+    background-color: #fde8e7;
+    border: 1px solid var(--color-danger);
+  }
+  
+  .stat-card--ok {
+    background-color: #e6f4ef;
+    border: 1px solid var(--color-success);
+  }
+  
+  .stat-card__count {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .stat-card__label {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .charts {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .chart-block {
+    flex: 1;
+  }
+  
+  .chart-block h3 {
+    color: var(--color-primary);
+    margin-bottom: 16px;
+  }
