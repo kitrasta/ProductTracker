@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+  }
+  
+  .ok {
+    background-color: var(--color-ok-bg);
+  }
+  
+  .soon {
+    background-color: var(--color-soon-bg);
+  }
+  
+  .expired {
+    background-color: var(--color-expired-bg);
+  }
+  
+  .icon {
+    flex-shrink: 0;
+  }
+  
+  .ok .icon { color: var(--color-ok); }
+  .soon .icon { color: var(--color-soon); }
+  .expired .icon { color: var(--color-expired); }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .count {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+  
+  .label {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+  }

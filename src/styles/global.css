@@ -1,0 +1,31 @@
+@import './variables.css';
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* База */
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+
+}
+
+/* Ссылки */
+a {
+  text-decoration: none;
+}
+
+
+
+
+ul, ol {
+  list-style: none;
+}
+

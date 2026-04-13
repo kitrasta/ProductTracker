@@ -1,0 +1,47 @@
+[
+    {
+      "id": "1",
+      "name": "Молоко",
+      "category": "dairy",
+      "purchaseDate": "2026-04-10",
+      "expiryDate": "2026-04-15",
+      "quantity": 1,
+      "status": "soon"
+    },
+    {
+      "id": "2",
+      "name": "Йогурт",
+      "category": "dairy",
+      "purchaseDate": "2026-04-08",
+      "expiryDate": "2026-04-11",
+      "quantity": 2,
+      "status": "expired"
+    },
+    {
+      "id": "3",
+      "name": "Яблоки",
+      "category": "fruits",
+      "purchaseDate": "2026-04-09",
+      "expiryDate": "2026-05-01",
+      "quantity": 5,
+      "status": "ok"
+    },
+    {
+      "id": "4",
+      "name": "Хлеб",
+      "category": "bakery",
+      "purchaseDate": "2026-04-10",
+      "expiryDate": "2026-04-13",
+      "quantity": 1,
+      "status": "soon"
+    },
+    {
+      "id": "5",
+      "name": "Куриное филе",
+      "category": "meat",
+      "purchaseDate": "2026-04-10",
+      "expiryDate": "2026-04-14",
+      "quantity": 1,
+      "status": "ok"
+    }
+  ]

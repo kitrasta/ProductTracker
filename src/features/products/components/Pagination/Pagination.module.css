@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .info {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin-right: 8px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .button {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background-color: white;
+    font-size: 14px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: var(--color-bg-page);
+  }
+  
+  .active {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+  }
