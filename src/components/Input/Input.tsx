@@ -1,4 +1,4 @@
-import style from './Input.module.css'
+import styles from './Input.module.css'
 
 interface Props {
     id: string

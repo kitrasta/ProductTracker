@@ -1,8 +1,8 @@
 import styles from './AddProductForm.module.css'
-import Input from '../../../components/Input/Input'
-import Button from '../../../components/Button/Button'
-import Select from '../../../components/Select/Select'
-import { categoryLabels } from '../../../types/category'
+import Input from '../../../../../components/Input/Input'
+import Button from '../../../../../components/Button/Button'
+import Select from '../../../../../components/Select/Select'
+import { categoryLabels } from '../../../../../types/category'
 
 const categoryOptions = Object.entries(categoryLabels).map(([value, label]) => ({
   value,
@@ -22,13 +22,13 @@ export default function AddProductForm() {
           placeholder="Введите название..."
         />
 
-<Select
-  id="category"
-  name="category"
-  label="Категория"
-  placeholder="Выберите категорию"
-  options={categoryOptions}
-/>
+        <Select
+          id="category"
+          name="category"
+          label="Категория"
+          placeholder="Выберите категорию"
+          options={categoryOptions}
+        />
 
         <Input
           id="purchaseDate"
@@ -38,10 +38,10 @@ export default function AddProductForm() {
         />
 
         <Input
-          id="purchaseDate"
-          name="purchaseDate"
+          id="expiryDate"
+          name="expiryDate"
           type="date"
-          label="Дата покупки"
+          label="Срок годности"
         />
 
         <Input
