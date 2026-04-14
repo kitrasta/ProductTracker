@@ -1,4 +1,13 @@
 import styles from './AddProductForm.module.css'
+import Input from '../../../components/Input/Input'
+import Button from '../../../components/Button/Button'
+import Select from '../../../components/Select/Select'
+import { categoryLabels } from '../../../types/category'
+
+const categoryOptions = Object.entries(categoryLabels).map(([value, label]) => ({
+  value,
+  label,
+}))
 
 export default function AddProductForm() {
   return (
@@ -6,58 +15,47 @@ export default function AddProductForm() {
       <h3 className={styles.title}>Добавить продукт</h3>
       <span className={styles.subtitle}>Заполните информацию о продукте</span>
       <form className={styles.form}>
-        <label htmlFor="name">Название продукта</label>
-        <input
+        <Input
           id="name"
           name="name"
-          className={styles.input}
-          type="text"
-          placeholder="Введите название продукта..."
+          label="Название продукта"
+          placeholder="Введите название..."
         />
 
-        <label htmlFor="category">Категория</label>
-        <select id="category" name="category" className={styles.select}>
-          <option value="">Выберите категорию</option>
-          <option value="dairy">Молочные</option>
-          <option value="fruits">Фрукты</option>
-          <option value="meat">Мясо</option>
-          <option value="bakery">Выпечка</option>
-          <option value="other">Другое</option>
-        </select>
+<Select
+  id="category"
+  name="category"
+  label="Категория"
+  placeholder="Выберите категорию"
+  options={categoryOptions}
+/>
 
-        <label htmlFor="purchaseDate">Дата покупки</label>
-        <input
+        <Input
           id="purchaseDate"
           name="purchaseDate"
-          className={styles.input}
           type="date"
+          label="Дата покупки"
         />
 
-        <label htmlFor="expiryDate">Срок годности</label>
-        <input
-          id="expiryDate"
-          name="expiryDate"
-          className={styles.input}
+        <Input
+          id="purchaseDate"
+          name="purchaseDate"
           type="date"
+          label="Дата покупки"
         />
 
-        <label htmlFor="quantity">Количество</label>
-        <input
+        <Input
           id="quantity"
           name="quantity"
-          className={styles.input}
           type="number"
-          min="1"
+          label="Количество"
+          min={1}
           defaultValue={1}
         />
 
         <div className={styles.buttons}>
-          <button type="submit" className={styles.btnPrimary}>
-            Добавить продукт
-          </button>
-          <button type="button" className={styles.btnSecondary}>
-            Отмена
-          </button>
+          <Button type="submit" variant="primary">Добавить продукт</Button>
+          <Button type="button" variant="secondary">Отмена</Button>
         </div>
       </form>
     </div>
