@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './AuthForm.module.css'
 import Input from '../Input/Input'
 import Button from '../Button/Button'
+import { supabase } from '../../services/supabase'
 
 type AuthMode = 'login' | 'register'
 
@@ -11,15 +12,45 @@ export default function AuthForm() {
   const [password, setPassword] = useState('')
   const [name, setName] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // подключим Supabase позже
-    console.log({ mode, email, password, name })
+  
+    if (mode === 'register') {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          data: {
+            name
+          }
+        }
+      })
+  
+      if (error) {
+        console.error(error.message)
+        return
+      }
+  
+      console.log('registered:', data)
+    }
+  
+    if (mode === 'login') {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password
+      })
+  
+      if (error) {
+        console.error(error.message)
+        return
+      }
+  
+      console.log('logged in:', data)
+    }
   }
 
   const handleGuest = () => {
-    // позже редирект на главную
-    console.log('guest login')
+    console.log('guest mode')
   }
 
   return (
